@@ -11,6 +11,9 @@ filetype plugin indent on
 set number
 let g:scala_sort_across_groups=1
 
+" hilight search
+:set hlsearch
+
 " enable syntax highlighting
 syntax enable
 
@@ -25,13 +28,15 @@ endtry
 " indent
 set expandtab
 set shiftwidth=2
-set tabstop=4
+set softtabstop=2
+set tabstop=2
 set smarttab
 set smartindent
 set ai " auto indent
 set wrap " wrap indent
 set lbr
 set tw=500
+set paste
 filetype indent on
 
 map <leader>t2 :setlocal shiftwidth=2<cr>
@@ -68,7 +73,8 @@ let g:golang_cwindow = 1
 let g:golang_inline_highlight = 1
 
 " Theme
-colorscheme Tomorrow-Night-Eighties
+" colorscheme Tomorrow-Night-Eighties
+colorscheme dracula
 
 " Easy Motion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
